@@ -20,8 +20,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
     column-count: 3;
 }
 /*I should make these post it notes and put the list of my job description on the post it notes the entire page can be one big board where they are pinned in- would give depth and look nice */
@@ -30,7 +31,7 @@ body{
     width: 200px;
     height: 100%;
     padding: 5px;
-    background-image: url(largePostIt.png);
+    background-image: url(gimpPostIt.png);
     background-image: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -39,7 +40,7 @@ body{
 
 .textchild{
 
-    margin-left: 5%;
+    margin-left: 10%;
     margin-bottom: 15%;
     margin-right: 20%;
     margin-top: 15%;
@@ -72,7 +73,7 @@ body{
 
 .navlist{
     padding: 10px;
-    background-color: #d2d3aa77;
+    background-color: #ecf00b9a;
     color: rgb(0, 0, 0);
 }
 
@@ -180,9 +181,11 @@ li{
 /*This is CSS For my forms*/
 .contactform{
 
-    background-color: #5B5A55;
+    background-image: url(paperclip.png);
+    
+    background-repeat: no-repeat;
     text-align: center;
-    color: #f9f9fc;
+    color: #000000;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 1%;
@@ -197,13 +200,14 @@ label{
     width: 15%;
     display: inline-block;
     padding-bottom: 15px;
+    
 }
 
 
 
 button{
     background: #5a595f;
-    border: 2px;
+    outline: none;
     color: white;
     font-size: 20px;
     height: 50px;
@@ -219,6 +223,7 @@ textarea {
     border-bottom: 1px solid rgb(0, 0, 0);
     padding: 10px 0;
     width: 20%;
+    background-color: #e9fa00;
 }
 
 
@@ -226,19 +231,52 @@ textarea {
     width: 80%;
 }
 
+#aboutmevid{
+    margin-bottom: 5%;
+}
+
 
 @media all and (min-width:320px) and (max-width: 767px)
 {
-    .navbuttons{
-        justify-content: center;
-        background-color: #e9fa00;
-       }
+    
+    .flex-container{
+        column-count: 1;
+    }
+    .flex-child{
+        flex: 1 1 100%;   
+        width: 200px;
+        height: 100%;
+        padding: 5px;
+        background-image: url(gimpPostIt.png);
+        background-image: no-repeat;
+        background-size: cover;
+        display: inline-block;
+       
+    }
+    .textchild{
+        font-size: small;
+    }
 }
+
 
 @media all and (min-width:768px) and (max-width: 1199px)
 {
-    .navbuttons{
-       background-color: blue;
-       }
+       .flex-container{
+        column-count: 1;
+    }
+    .flex-child{
+        flex: 1 1 100%;   
+        width: 200px;
+        height: 100%;
+        padding: 5px;
+        background-image: url(gimpPostIt.png);
+        background-image: no-repeat;
+        background-size: fill;
+        display: inline-block;
+        text-size-adjust: 5px;
+    }
+    .textchild{
+        font-size:medium;
+    }
 }
 
