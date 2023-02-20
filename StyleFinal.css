@@ -48,9 +48,6 @@ body{
     
 }
 
-
-
-
 .navbuttons{
     display: flex;
     align-items: center;
@@ -75,6 +72,13 @@ body{
     padding: 10px;
     background-color: #ecf00b9a;
     color: rgb(0, 0, 0);
+    border-right: 1px solid black;
+}
+
+.navlist:last-child{
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 
